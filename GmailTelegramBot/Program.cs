@@ -1,4 +1,5 @@
 ﻿using System;
+using Newtonsoft.Json;
 
 namespace GmailTelegramBot
 {
@@ -6,7 +7,7 @@ namespace GmailTelegramBot
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(Configuration.Instance.TelegramSettings.BotToken);
         }
     }
 }

@@ -6,10 +6,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
-    </ItemGroup>
-
-    <ItemGroup>
       <None Remove="config.json" />
       <EmbeddedResource Include="config.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -20,6 +16,10 @@
       <Content Include="..\.gitignore">
         <Link>.gitignore</Link>
       </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Telegram.Bot" Version="15.1.0" />
     </ItemGroup>
 
 </Project>
